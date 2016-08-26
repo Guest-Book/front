@@ -1,4 +1,6 @@
-<app-add-guest></app-add-guest>
+<div *ngIf="!guests">
+  <h1>Message list is empty</h1>
+</div>
 <md-card *ngFor="let guest of guests" style="margin-top: 1%; background-color: #00B9FF;">
   <h2>{{guest.author}}</h2>
   <p>{{guest.message}}</p>

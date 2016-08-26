@@ -4,7 +4,6 @@ import { MD_BUTTON_DIRECTIVES } from '@angular2-material/button';
 import {Http, Response} from '@angular/http';
 import 'rxjs/Rx';
 import {Guest} from './guestInterface';
-import {AddGuestComponent} from './add-guest/add-guest.component';
 import {GuestService} from './guest.service';
 
 @Component({
@@ -12,7 +11,7 @@ import {GuestService} from './guest.service';
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.css'],
-  directives: [MD_CARD_DIRECTIVES, MD_BUTTON_DIRECTIVES, AddGuestComponent],
+  directives: [MD_CARD_DIRECTIVES, MD_BUTTON_DIRECTIVES],
   providers: [GuestService]
 })
 export class AppComponent{
